@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1225.782pt"
+   height="304.73621pt"
+   viewBox="0 0 1225.8374 304.49202"
+   version="1.1"
+   id="svg80"
+   sodipodi:docname="concepten.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs80" />
+  <sodipodi:namedview
+     id="namedview80"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="0.50403044"
+     inkscape:cx="809.47492"
+     inkscape:cy="375.96936"
+     inkscape:window-width="3440"
+     inkscape:window-height="1440"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg80" />
+  <rect
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.750034"
+     id="rect1"
+     width="1257.4214"
+     height="337.79248"
+     x="-7.4403629"
+     y="-10.54549" />
+  <g
+     id="node12"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title21">11</title>
+    <g
+       id="a_node12">
+      <a
+         xlink:title="cluster-python-concepten__basis-reguliere-expressies"
+         id="a21">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2263.4099"
+           cy="-285.75"
+           rx="143.28"
+           ry="18"
+           id="ellipse21" />
+        <text
+           text-anchor="middle"
+           x="2263.4099"
+           y="-281.07001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text21">Basis reguliere expressies</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="node13"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title22">12</title>
+    <g
+       id="a_node13">
+      <a
+         xlink:title="cluster-python-concepten__groepen-in-reguliere-expressies"
+         id="a22">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2178.4099"
+           cy="-196.5"
+           rx="171.69"
+           ry="18"
+           id="ellipse22" />
+        <text
+           text-anchor="middle"
+           x="2178.4099"
+           y="-191.82001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text22">Groepen in reguliere expressies</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge15"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title23">11-&gt;12</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2246.62,-267.51 c -12.46,12.78 -29.64,30.42 -43.64,44.79"
+       id="path23" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2200.69,-225.39 2205.71,-220.51 2196.22,-215.79 "
+       id="polygon23" />
+    <text
+       text-anchor="middle"
+       x="2238.78"
+       y="-236.45"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text23">All</text>
+  </g>
+  <g
+     id="node21"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title24">20</title>
+    <g
+       id="a_node21">
+      <a
+         xlink:title="cluster-python-concepten__syntaxbomen-basis"
+         id="a24">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2476.4099"
+           cy="-196.5"
+           rx="108.03"
+           ry="18"
+           id="ellipse24" />
+        <text
+           text-anchor="middle"
+           x="2476.4099"
+           y="-191.82001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text24">Basis syntaxbomen</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge18"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title25">11-&gt;20</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2304.23,-268.03 c 34.74,14.23 84.78,34.73 121.97,49.96"
+       id="path25" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2424.83,-214.85 2427.48,-221.32 2435.41,-214.29 "
+       id="polygon25" />
+    <text
+       text-anchor="middle"
+       x="2398.78"
+       y="-236.45"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text25">All</text>
+  </g>
+  <g
+     id="node19"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title35">18</title>
+    <g
+       id="a_node19">
+      <a
+         xlink:title="cluster-python-concepten__visitor-pattern"
+         id="a35">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2745.4099"
+           cy="-196.5"
+           rx="84.879997"
+           ry="18"
+           id="ellipse35" />
+        <text
+           text-anchor="middle"
+           x="2745.4099"
+           y="-191.82001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text35">Visitor pattern</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="node20"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title36">19</title>
+    <g
+       id="a_node20">
+      <a
+         xlink:title="cluster-python-concepten__transformer-pattern"
+         id="a36">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2745.4099"
+           cy="-107.25"
+           rx="114.34"
+           ry="18"
+           id="ellipse36" />
+        <text
+           text-anchor="middle"
+           x="2745.4099"
+           y="-102.58"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text36">Transformer pattern</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge21"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title37">18-&gt;19</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2745.41,-178.26 c 0,11.83 0,27.81 0,41.51"
+       id="path37" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2741.91,-136.97 2748.91,-136.97 2745.41,-126.97 "
+       id="polygon37" />
+    <text
+       text-anchor="middle"
+       x="2754.78"
+       y="-147.2"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text37">All</text>
+  </g>
+  <g
+     id="node22"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title38">21</title>
+    <g
+       id="a_node22">
+      <a
+         xlink:title="cluster-python-concepten__libcst-basis-visitor"
+         id="a38">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2476.4099"
+           cy="-107.25"
+           rx="136.44"
+           ry="18"
+           id="ellipse38" />
+        <text
+           text-anchor="middle"
+           x="2476.4099"
+           y="-102.58"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text38">Basis LibCST met Visitor</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge20"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title39">18-&gt;21</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2700.38,-180.9 c -44.77,14.53 -113.75,36.9 -163.33,52.98"
+       id="path39" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2536.02,-131.27 2538.18,-124.61 2527.59,-124.85 "
+       id="polygon39" />
+    <text
+       text-anchor="middle"
+       x="2644.78"
+       y="-147.2"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text39">All</text>
+  </g>
+  <g
+     id="node23"
+     class="node"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title42">22</title>
+    <g
+       id="a_node23">
+      <a
+         xlink:title="cluster-python-concepten__libcst-basis-transformer"
+         id="a42">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="2611.4099"
+           cy="-18"
+           rx="165.89999"
+           ry="18"
+           id="ellipse42" />
+        <text
+           text-anchor="middle"
+           x="2611.4099"
+           y="-13.32"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text42">Basis LibCST met Transformer</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge23"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title43">19-&gt;22</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2719.57,-89.43 c -20.63,13.43 -49.76,32.4 -72.59,47.27"
+       id="path43" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2645.36,-45.28 2649.18,-39.42 2638.89,-36.89 "
+       id="polygon43" />
+    <text
+       text-anchor="middle"
+       x="2700.78"
+       y="-57.950001"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text43">All</text>
+  </g>
+  <g
+     id="edge19"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title44">20-&gt;21</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2476.41,-178.26 c 0,11.83 0,27.81 0,41.51"
+       id="path44" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2472.91,-136.97 2479.91,-136.97 2476.41,-126.97 "
+       id="polygon44" />
+    <text
+       text-anchor="middle"
+       x="2485.78"
+       y="-147.2"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text44">All</text>
+  </g>
+  <g
+     id="edge22"
+     class="edge"
+     transform="translate(-2006.2199,304.12101)">
+    <title
+       id="title45">21-&gt;22</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 2502.76,-89.22 c 20.81,13.45 50.07,32.36 72.98,47.17"
+       id="path45" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="2573.56,-39.3 2577.36,-45.18 2583.85,-36.81 "
+       id="polygon45" />
+    <text
+       text-anchor="middle"
+       x="2565.78"
+       y="-57.950001"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text45">All</text>
+  </g>
+  <g
+     id="node35"
+     class="node"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title61">34</title>
+    <g
+       id="a_node35">
+      <a
+         xlink:title="cluster-python-concepten__hogere-orde-functies"
+         id="a61">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="4630.4102"
+           cy="-285.75"
+           rx="116.97"
+           ry="18"
+           id="ellipse61" />
+        <text
+           text-anchor="middle"
+           x="4630.4102"
+           y="-281.07001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text61">Hogere orde functies</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="node37"
+     class="node"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title62">36</title>
+    <g
+       id="a_node37">
+      <a
+         xlink:title="cluster-python-concepten__decorators-basis"
+         id="a62">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="4774.4102"
+           cy="-196.5"
+           rx="94.879997"
+           ry="18"
+           id="ellipse62" />
+        <text
+           text-anchor="middle"
+           x="4774.4102"
+           y="-191.82001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text62">Basis decorators</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge29"
+     class="edge"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title63">34-&gt;36</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 4658.17,-267.93 c 22.56,13.67 54.57,33.06 79.29,48.04"
+       id="path63" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="4745.92,-214.76 4735.56,-216.95 4739.18,-222.93 "
+       id="polygon63" />
+    <text
+       text-anchor="middle"
+       x="4724.7798"
+       y="-236.45"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text63">All</text>
+  </g>
+  <g
+     id="node36"
+     class="node"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title64">35</title>
+    <g
+       id="a_node36">
+      <a
+         xlink:title="cluster-python-concepten__args-kwargs"
+         id="a64">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="4919.4102"
+           cy="-285.75"
+           rx="153.8"
+           ry="18"
+           id="ellipse64" />
+        <text
+           text-anchor="middle"
+           x="4919.4102"
+           y="-281.07001"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text64">List en dictionary unpacking</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge28"
+     class="edge"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title65">35-&gt;36</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 4891.11,-267.72 c -22.6,13.6 -54.47,32.77 -79.19,47.65"
+       id="path65" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="4803.44,-214.97 4810.21,-223.13 4813.82,-217.13 "
+       id="polygon65" />
+    <text
+       text-anchor="middle"
+       x="4869.7798"
+       y="-236.45"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text65">All</text>
+  </g>
+  <g
+     id="node38"
+     class="node"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title66">37</title>
+    <g
+       id="a_node38">
+      <a
+         xlink:title="cluster-python-concepten__decorators-met-argumenten"
+         id="a66">
+        <ellipse
+           fill="none"
+           stroke="#000000"
+           cx="4774.4102"
+           cy="-107.25"
+           rx="153.27"
+           ry="18"
+           id="ellipse66" />
+        <text
+           text-anchor="middle"
+           x="4774.4102"
+           y="-102.58"
+           font-family="Times, serif"
+           font-size="14px"
+           id="text66">Decorators met argumenten</text>
+      </a>
+    </g>
+  </g>
+  <g
+     id="edge30"
+     class="edge"
+     transform="translate(-3847.8727,348.18772)">
+    <title
+       id="title67">36-&gt;37</title>
+    <path
+       fill="none"
+       stroke="#000000"
+       d="m 4774.41,-178.26 c 0,11.83 0,27.81 0,41.51"
+       id="path67" />
+    <polygon
+       fill="#000000"
+       stroke="#000000"
+       points="4774.41,-126.97 4770.91,-136.97 4777.91,-136.97 "
+       id="polygon67" />
+    <text
+       text-anchor="middle"
+       x="4783.7798"
+       y="-147.2"
+       font-family="Times, serif"
+       font-size="14px"
+       id="text67">All</text>
+  </g>
+</svg>

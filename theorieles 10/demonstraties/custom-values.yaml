@@ -1,0 +1,7 @@
+# dit zijn waarden die ondersteund worden in de NGINX Helm chart
+# kijk in de documentatie van een chart
+# vergelijk met opzoeken parameters op Docker Hub
+replicaCount: 2
+podLabels:
+  additionalLabel: someValue
+

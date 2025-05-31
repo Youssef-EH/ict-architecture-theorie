@@ -1,0 +1,125 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx # de default
+  rules:
+    - host: app1.demowebsite.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app1-service
+                port:
+                  number: 80
+    - host: app2.demowebsite.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app2-service
+                port:
+                  number: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app1-pod
+  labels:
+    app: app1
+spec:
+  volumes:
+    - name: app1-volume
+      configMap:
+        name: app1-config
+  containers:
+  - name: app1-container
+    image: httpd:2.4
+    ports:
+      - containerPort: 80
+    volumeMounts:
+      - name: app1-volume
+        mountPath: /usr/local/apache2/htdocs
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app2-pod
+  labels:
+    app: app2
+spec:
+  volumes:
+    - name: app2-volume
+      configMap:
+        name: app2-config
+  containers:
+  - name: app2-container
+    image: httpd:2.4
+    ports:
+      - containerPort: 80
+    volumeMounts:
+      - name: app2-volume
+        mountPath: /usr/local/apache2/htdocs
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app1-config
+data:
+  index.html: |
+    <!doctype html>
+    <html>
+    <head>
+      <title>app1</title>
+    </head>
+    <body>
+      <h1>App1 works!</h1>
+    </body>
+    </html>
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app2-config
+data:
+  index.html: |
+    <!doctype html>
+    <html>
+    <head>
+      <title>app2</title>
+    </head>
+    <body>
+      <h2>App2 works!</h1>
+    </body>
+    </html>
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app1-service
+spec:
+  type: ClusterIP
+  selector:
+    app: app1
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app2-service
+spec:
+  type: ClusterIP
+  selector:
+    app: app2
+  ports:
+    - port: 80
+      targetPort: 80

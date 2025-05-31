@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title><%= folderName %></title>
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/black.css" />
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Hamburger knop -->
+    <button class="drawer-toggle" onclick="toggleDrawer()">☰</button>
+
+    <!-- Side drawer -->
+    <div class="drawer" id="drawerNav">
+      <% lesFolders.forEach(function(les) { %>
+      <a
+        href="/?les=<%= encodeURIComponent(les) %>"
+        class="drawer-link<%= les === folderName ? ' active' : '' %>"
+      >
+        <%= les %>
+      </a>
+      <% }); %>
+    </div>
+
+    <!-- Reveal.js presentatie -->
+    <div class="reveal">
+      <div class="slides">
+        <% slides.forEach(slide => { %>
+        <section><%- slide %></section>
+        <% }) %>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="./node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="./node_modules/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid],
+      })
+    </script>
+    <script>
+      function toggleDrawer() {
+        const drawer = document.getElementById('drawerNav')
+        drawer.classList.toggle('open')
+      }
+    </script>
+
+    <script src="./mermaid-component-text-scaling.js"></script>
+  </body>
+</html>

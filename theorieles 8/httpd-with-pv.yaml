@@ -1,0 +1,57 @@
+## OPGELET
+## Kubernetes op Docker Desktop runt uiteindelijk op WSL
+## dus gewoon hostpath instellen gaat niet
+## maak eerst een gedeelde dir in /mnt/wsl (bv /mnt/wsl/hostpath)
+## mount daar dan via sudo mount --bind /mnt/c/Users/vincent/testdir /mnt/wsl/hostpath
+## gebruik als hostPath dan "/run/desktop/mnt/host/wsl/sample-hostmount" (extra prefix omdat dit niet aan een specifiek WSL distro gebonden is)
+## zie uitleg https://github.com/docker/for-win/issues/7488
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: localstorage
+provisioner: docker.io/hostpath
+---
+apiVersion: v1
+kind: PersistentVolume # dit zegt: "er bestaat een volume met deze eigenschappen"
+metadata:
+  # we gaan eerst demonstreren met Apache web server
+  # maar aangezien die files zelf niet meer aanpast is ConfigMap eigenlijk logischer
+  name: httpd-pv
+spec:
+  storageClassName: localstorage
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    type: Directory
+    path: "/run/desktop/mnt/host/wsl/sample-hostmount"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim # dit vraagt om een volume met bepaalde eigenschappen
+metadata:
+  name: httpd-pvc
+spec:
+  storageClassName: localstorage
+  accessModes:
+    - ReadWriteOnce # er kan maar één claim op het volume zijn
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd
+spec:
+  containers:
+    - name: httpd
+      image: httpd:2.4
+      volumeMounts:
+        - name: public-html-dir
+          mountPath: "/usr/local/apache2/htdocs/"
+          mountPropagation: HostToContainer
+  volumes:
+    - name: public-html-dir
+      persistentVolumeClaim:
+        claimName: httpd-pvc

@@ -1,0 +1,28 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: echoerconfigmap
+data:
+  voornaam: Vincent
+  familienaam: Nys
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "hellopod"
+spec:
+  containers:
+    - name: echoer
+      image: busybox
+      env:
+        - name: VOORNAAM
+          valueFrom:
+            configMapKeyRef:
+              name: echoerconfigmap
+              key: voornaam
+        - name: FAMILIENAAM
+          valueFrom:
+            configMapKeyRef:
+              name: echoerconfigmap
+              key: familienaam
+      command: ["/bin/sh", "-c", "echo Hallo $(VOORNAAM) $(FAMILIENAAM)"]

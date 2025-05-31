@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tkb-sts # matcht met de serviceName van de StatefulSet
+spec:
+  clusterIP: None # dit maakt de service headless
+  selector:
+    app: mongo
+  # niet nodig port mappings te definiëren

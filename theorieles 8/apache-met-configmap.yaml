@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-pod
+  labels:
+    app: httpd
+spec:
+  # let op: Volumes ⊃ PersistentVolumes
+  # die laatste hebben onafhankelijke levenscyclus van pods
+  volumes:
+    - name: volumeformap
+      configMap:
+        name: test-config-map-file # naam van eerder
+  containers:
+  - name: httpd
+    image: httpd:2.4
+    ports:
+    - containerPort: 80
+    volumeMounts:
+      - name: volumeformap
+        mountPath: /usr/local/apache2/htdocs # zie Docker Hub, defaultlocatie voor pagina's
