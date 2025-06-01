@@ -1,1 +1,20 @@
-node_modules
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Reveal.js build/output (indien je iets compileert)
+dist/
+build/
+
+# Editor/IDE bestanden
+.vscode/
+.idea/
+*.log
+
+# System
+Thumbs.db
+.env
